@@ -1,0 +1,96 @@
+# fix, add, changeといった事実ではなく、このcommitで実現する要件や仕様を書きましょう。（リファクタなどは除く）
+# 
+# 例文）
+# - Fix typo in docs
+# - Remove unused code
+# - Remove use of deprecated method
+# - Update Modernizr to v1.6
+# - Make it possible to have IDs per request
+# - Make sure to reset default_url_options（必ずリセットする）
+# - Don't use "assert_not_nil"
+# - Allow the user to drag faster
+# - Remove methods to avoid warnings.
+
+# undesirable	好ましくない
+# avoid, circumvent	回避する
+# retrieve	取りに行く(fetch / 「受け取る」よりもっと能動的に「取りに行く」ニュアンスを示す)
+# revise	= fix
+# tweak	微調整する
+# in the sight of 〜	〜の視点で (point of view をわざと仰々しく言った感じ)
+# refer	参照する
+# disambiguate	曖昧さをなくす
+# quite	とても（veryのかわりにつかえる
+# literally	文字通り
+# exactly	まさに、確かに、イグザクトリー
+# resurrect	よみがえらせる
+# in favor of	〜に賛成して, 何かに沿って
+# get rid of	好ましくないものを取り除く
+# kick out	get rid of の強いバージョン、腹立たしさある
+# introduce	導入する
+# extract	抽出する
+# no longer used	もはや使われてない
+# R.I.P.	安らかに眠れ（もう使ってないコードを消す時などに。「Removeでは語りきれない思いがあるんだ」 by @idesaku ）
+# defeat	倒す、打ち負かす
+# :put_litter_in_its_place:	ゴミはゴミ箱へ（不要なコメントやwhitespaceを消したときなど）
+# cosmetic change, cosme	インデントを美しくした時など
+# fruitful	みのりの多い〜, fruitful discussion など
+# :golf:	コードをより短くした（code golf）
+# Take a cup of coffee	JS を CoffeeScript 化した, またはCoffeeをよりCoffeeらしく書いた
+# kick in	効きはじめる, 適用される など（DHHが使っていたらしい。）
+# A in B out	Bの変わりにAを導入（サッカー的な感じ。Gemの差し替えなどに使う）
+# enable to work	動くようにした
+# wipe out	拭い去る（get rid of, kick out の亜種）
+# stop rendering 〜	〜を表示しない
+# aesthetic	cosmetic の亜種（多分）
+# Ooops! 	しょうもないミスした時などに。  :scream_cat: 使うとかわいみでる。
+# Aを実装しました	Implement A
+# 機能(クラス)BにAを実装しました	Add A to B
+# 機能(クラス)BのAをリファクタリングしました	Refactor A in B
+# AをBからCに変更しました	Change A from B to C
+# AでなくBを使うようにしました	Replace A with B
+# 機能(クラス)Aのテストを追加しました	Add test for A
+# 機能(クラス)Aの失敗していたテストを修正しました	Fix broken A tests
+# 依存ライブラリAをバージョンx.y.zに上げました	Update A to x.y.z
+# ファイルA中の誤字を修正しました	Fix typo in A
+# 〜のとき〜するバグを修正しました	Fix the problem where 〜 when 〜
+# 機能(クラス)Aについて、Bにも対応しました	Support B in A
+#ドキュメントAのBに関する記述を修正しました	Improve B in A
+# Aで発生するエラーメッセージを見直しました	Improve error message thrown in A
+# バージョンx.y.zをリリースしました	Release x.y.z
+
+# ==== Emojis ====
+# 🐣  :hatching_chick: [WIP]Make a pull request
+# ♻️  :recycle: Refactoring
+# 💚  :green_heart: Fix broken spec
+# 👕  :shirt: Fix lint / Cosmetic
+# 🎨  :art: Update design
+# 🐛  :bug: Fix bug
+# 🔧  :wrench: Update configration
+# 🚿  :shower: Remove commented code / Remove unused code
+# ✨  :sparkles: Added A feature of __
+# 🏇  :horse_racing: Fix performance
+# 🆙  :up: Update Name@Version
+# 📝  :memo: Add Comment / Update documentation for __
+# 🎉  :tada: Release: v1.0.0
+# ➕  :heavy_plus_sign: Add gem __
+# ➖  :heavy_minus_sign: Remove gem __
+# 👮  :cop: Fix security
+# ⚠️ :warning: Avoiding Problems
+#
+# ==== Format ====
+# :emoji: Subject
+#
+# Commit body...
+#
+# ==== The Seven Rules ====
+# 1. Separate subject from body with a blank line
+# 2. Limit the subject line to 50 characters
+# 3. Capitalize the subject line
+# 4. Do not end the subject line with a period
+# 5. Use the imperative mood in the subject line
+# 6. Wrap the body at 72 characters
+# 7. Use the body to explain what and why vs. how
+#
+# How to Write a Git Commit Message http://chris.beams.io/posts/git-commit/
+#
+# for http://memo.goodpatch.co/2016/07/beautiful-commits-with-emojis/
