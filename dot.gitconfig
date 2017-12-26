@@ -1,0 +1,26 @@
+[color]
+	ui = true
+        autocrlf = input
+[alias]
+	pl = pull
+	br = branch
+	cm = commit -m
+	ps = push
+	st = status
+	co = checkout
+	lg = log --decorate --graph
+	ss = stash save
+	df = diff --cached
+	pr = pull --rebase
+	cf = !git ls-files -u | cut -f 2 | sort -u
+	bd = !sh -c 'git branch | grep $1 | xargs git branch -D' -
+
+[core]
+  precomposeunicode = true
+	excludesfile = ~/.gitignore
+[push]
+	default = current
+[merge]
+	tool = vimdiff
+[commit]
+	template = ~/.gitmessage.txt
